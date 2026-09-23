@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-15)
+## Unreleased (2026-09-23)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`86186d0`](https://github.com/stdlib-js/stdlib/commit/86186d0a41f799a4749035eba84a45f2ba3981c2) - **docs:** fix invalid `NaN` literal in C examples [(#14353)](https://github.com/stdlib-js/stdlib/pull/14353) _(by Philipp Burckhardt)_
 -   [`d2bb04a`](https://github.com/stdlib-js/stdlib/commit/d2bb04a6023799eeee79a228c3384490b4fb3116) - **feat:** add C implementation for `stats/base/ndarray/dnanmidrange` [(#14279)](https://github.com/stdlib-js/stdlib/pull/14279) _(by Ujjwal Verma)_
 -   [`46ec186`](https://github.com/stdlib-js/stdlib/commit/46ec186fcbd6df60f64a58f504b661a63bc5cd47) - **docs:** update description _(by Athan Reines)_
 -   [`efb8640`](https://github.com/stdlib-js/stdlib/commit/efb8640d97dfffd8897418dcea2e4df1481ca6fc) - **chore:** modernize examples and benchmarks _(by Athan Reines)_
@@ -36,9 +37,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 -   Ujjwal Verma
 
 </section>
