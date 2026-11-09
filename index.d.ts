@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,18 +16,35 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/ndarray/dnanmidrange.h"
-#include "stdlib/stats/strided/dnanmidrange.h"
-#include "stdlib/ndarray/ctor.h"
-#include "stdlib/blas/base/shared.h"
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { float64ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the mid-range of a one-dimensional double-precision floating-point ndarray, ignoring `NaN` values.
 *
-* @param arrays    list containing an input ndarray
-* @return          mid-range
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
+* @returns mid-range
+*
+* @example
+* var Float64Vector = require( '@stdlib/ndarray-vector-float64' );
+*
+* var x = new Float64Vector( [ 1.0, -2.0, NaN, 2.0 ] );
+*
+* var v = dnanmidrange( [ x ] );
+* // returns 0.0
 */
-double stdlib_stats_dnanmidrange( const struct ndarray *arrays[] ) {
-	const struct ndarray *x = arrays[ 0 ];
-	return API_SUFFIX(stdlib_strided_dnanmidrange_ndarray)( stdlib_ndarray_dimension( x, 0 ), (const double *)stdlib_ndarray_data( x ), stdlib_ndarray_stride_elements( x, 0 ), stdlib_ndarray_offset_elements( x ) );
-}
+declare function dnanmidrange( arrays: [ float64ndarray ] ): number;
+
+
+// EXPORTS //
+
+export = dnanmidrange;
